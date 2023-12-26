@@ -29,7 +29,7 @@ function Register(props) {
     <div className="flex justify-center items-center h-96">
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="border border-black flex flex-col justify-between items-center h-5/6 lg:w-2/6 xs:w-5/6 shadow-lg bg-gray-200"
+        className="border border-black flex flex-col justify-between items-center lg:h-5/6 xs:h-90 xs:p-5 xs:m-4 lg:w-2/6 xs:w-5/6 shadow-lg bg-gray-200"
       >
         <h1 className="text-red-500 mt-2 text-lg">REGISTRATION FORM</h1>
         <div className="h-8 w-full mb-2">

@@ -8,6 +8,7 @@ export default {
     extend: {
       spacing: {
         '96': '30rem', 
+        '90': '28rem', 
       },
     },
     screens: {

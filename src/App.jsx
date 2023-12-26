@@ -47,8 +47,8 @@ function App() {
         </div>
 
         {user ? (
-          <h1>
-            Hello <span className="text-red-500 font-bold">{user}</span>
+          <h1 className="xs:text-xs">
+            Hello <span className="text-red-500 font-bold xs:text-xs">{user}</span>
           </h1>
         ) : (
           <div>
