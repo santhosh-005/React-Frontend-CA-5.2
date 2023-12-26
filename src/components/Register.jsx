@@ -29,7 +29,7 @@ function Register(props) {
     <div className="flex justify-center items-center h-96">
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="border border-black flex flex-col justify-between items-center h-5/6 w-2/6 shadow-lg bg-gray-200"
+        className="border border-black flex flex-col justify-between items-center h-5/6 lg:w-2/6 xs:w-5/6 shadow-lg bg-gray-200"
       >
         <h1 className="text-red-500 mt-2 text-lg">REGISTRATION FORM</h1>
         <div className="h-8 w-full mb-2">
@@ -50,14 +50,14 @@ function Register(props) {
               message: "name must be less than 30 characters",
             },
           })}
-        className="border-2 border-gray-400 py-2 px-5 rounded-md"
+        className="border-2 border-gray-400 lg:py-2 lg:px-5 xs:p-1 rounded-md"
         />
         <p className="text-red-500">{errors.name?.message}</p>
         <input
           type="email"
           placeholder="your email"
           {...register("email", { required: "email is required" })}
-          className="border-2 border-gray-400 py-2 px-5 rounded-md"
+          className="border-2 border-gray-400 lg:py-2 lg:px-5 xs:p-1  rounded-md"
         />
         <p  className="text-red-500">{errors.email?.message}</p>
         <input
@@ -74,7 +74,7 @@ function Register(props) {
               message: "Password must contain at least one special character",
             },
           })}
-          className="border-2 border-gray-400 py-2 px-5 rounded-md"
+          className="border-2 border-gray-400 lg:py-2 lg:px-5 xs:p-1 rounded-md"
         />
         <p  className="text-red-500">{errors.password?.message}</p>
         <input
@@ -85,10 +85,10 @@ function Register(props) {
             validate: (value) =>
               value === password || "Password does not match",
           })}
-          className="border-2 border-gray-400 py-2 px-5 rounded-md"
+          className="border-2 border-gray-400 lg:py-2 lg:px-5 xs:p-1 rounded-md"
         />
         <p className="text-red-500">{errors.repeatPassword?.message}</p>
-        <button type="submit" className="text-white font-bold bg-green-600 rounded text-center py-2 px-6 mb-2">
+        <button type="submit" className="text-white font-bold bg-green-600 rounded text-center lg:py-2 lg:px-6 xs:p-1 mb-2">
           {submit && isValid ? (
             <Link to={"/"}>Back to home</Link>
           ) : (

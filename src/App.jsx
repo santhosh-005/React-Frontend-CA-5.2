@@ -14,16 +14,16 @@ function App() {
     <div>
       {/* navbar */}
 
-      <div className="flex justify-between items-center border-gray-600 border-2 p-6 shadow-lg">
+      <div className="flex justify-between items-center border-gray-600 border-2 lg:p-6 xs:p-2 shadow-lg">
         <div className="flex space-x-2 items-center">
           <img
-            className="h-16"
+            className="xs:h-8 md:h-16"
             src="https://kalvium.com/wp-content/uploads/2022/07/fav.png"
             alt=""
           />
           <div>
-            <h1 className="text-red-600 font-bold text-xl">Kalvium</h1>
-            <h1 className="font-bold">Books</h1>
+            <h1 className="text-red-600 font-bold lg:text-xl">Kalvium</h1>
+            <h1 className="font-bold xs:text-xs">Books</h1>
           </div>
         </div>
 
@@ -36,11 +36,11 @@ function App() {
               e.key == "Enter" && setSendValue(searchValue);
             }}
             onChange={(e) => setSearchValue(e.target.value)}
-            className="border border-gray-400 lg:w-80 sm:w-36 h-9 p-3 shadow-lg rounded-s-sm"
+            className="border border-gray-400 lg:w-80 xs:w-24 h-9 p-3 shadow-lg rounded-s-sm "
           />
           <span
             onClick={() => setSendValue(searchValue)}
-            className="border border-gray-400 p-2 rounded-e-sm hover:bg-gray-300	"
+            className="border border-gray-400 p-2 rounded-sm hover:bg-gray-300	"
           >
             <i className="fa fa-search"></i>
           </span>
@@ -53,7 +53,7 @@ function App() {
         ) : (
           <div>
             <Link to="/register">
-              <button className="text-white font-bold bg-blue-600 rounded px-4 py-2 hover:bg-blue-700">
+              <button className="text-white font-bold bg-blue-600 xs:p-1 rounded lg:px-4 lg:py-2 hover:bg-blue-700">
                 Register
               </button>
             </Link>
