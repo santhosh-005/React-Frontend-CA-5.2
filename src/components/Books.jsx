@@ -41,13 +41,13 @@ function Books(props) {
           return (
             <div
               key={index}
-              className="books border border-gray-300 h-80 w-44 m-4 rounded shadow-lg transform hover:scale-110"
+              className="books border border-gray-300 lg:h-80 lg:w-44 m-4 rounded shadow-lg transform hover:scale-110 xs:w-4/6 xs:h-78"
             >
               {book.imageLinks && book.imageLinks.thumbnail ? (
                 <img
                   src={book.imageLinks?.thumbnail}
                   alt="Image not available"
-                  className="w-full h-60"
+                  className="w-full h-5/6"
                 />
               ) : (
                 <img

@@ -9,6 +9,7 @@ export default {
       spacing: {
         '96': '30rem', 
         '90': '28rem', 
+        '78': '20rem', 
       },
     },
     screens: {
