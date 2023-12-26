@@ -52,14 +52,14 @@ function Register(props) {
           })}
         className="border-2 border-gray-400 py-2 px-5 rounded-md"
         />
-        <p>{errors.name?.message}</p>
+        <p className="text-red-500">{errors.name?.message}</p>
         <input
           type="email"
           placeholder="your email"
           {...register("email", { required: "email is required" })}
           className="border-2 border-gray-400 py-2 px-5 rounded-md"
         />
-        <p>{errors.email?.message}</p>
+        <p  className="text-red-500">{errors.email?.message}</p>
         <input
           type="text"
           placeholder="password"
@@ -76,7 +76,7 @@ function Register(props) {
           })}
           className="border-2 border-gray-400 py-2 px-5 rounded-md"
         />
-        <p>{errors.password?.message}</p>
+        <p  className="text-red-500">{errors.password?.message}</p>
         <input
           type="text"
           placeholder="repeat password"
@@ -87,7 +87,7 @@ function Register(props) {
           })}
           className="border-2 border-gray-400 py-2 px-5 rounded-md"
         />
-        <p>{errors.repeatPassword?.message}</p>
+        <p className="text-red-500">{errors.repeatPassword?.message}</p>
         <button type="submit" className="text-white font-bold bg-green-600 rounded text-center py-2 px-6 mb-2">
           {submit && isValid ? (
             <Link to={"/"}>Back to home</Link>
