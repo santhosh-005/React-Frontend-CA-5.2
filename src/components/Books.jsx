@@ -8,6 +8,8 @@ function Books(props) {
   const dispatch = useDispatch();
   const data = useSelector((state) => state.data);
 
+  const searchValue=encodeURIComponent(props.value)
+
   useEffect(() => {
     dispatch(addBooks([]));
 
@@ -15,7 +17,7 @@ function Books(props) {
       ? axios
           .post(
             "https://reactnd-books-api.udacity.com/search",
-            { query: props.value, maxResults: 20 },
+            { query: searchValue, maxResults: 20 },
             { headers: { Authorization: "whatever-you-want" } }
           )
           .then((res) => {
