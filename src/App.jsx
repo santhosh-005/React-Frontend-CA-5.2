@@ -76,7 +76,7 @@ function App() {
         <p>
           Developed and Designed by 
           <span className="text-red-600 font-bold underline ">
-            <a href="https://santhosh-portfolio-ccbab.web.app/"> Santhosh</a>
+            <a href="https://santhosh-portfolio-ccbab.web.app/" target="_blank"> Santhosh</a>
           </span>
         </p>
       </div>
